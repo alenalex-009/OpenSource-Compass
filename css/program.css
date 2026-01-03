@@ -8,6 +8,7 @@
     --white: #FFFFFF;
 }
 
+/* ---------- Global ---------- */
 * {
     margin: 0;
     padding: 0;
@@ -16,11 +17,11 @@
 }
 
 body {
-    background-color: var(--light-gray);
+    background: var(--light-gray);
     color: var(--text-dark);
 }
 
-/* Navbar */
+/* ---------- Navbar ---------- */
 header {
     background: var(--white);
     padding: 16px 8%;
@@ -39,20 +40,21 @@ nav a {
     margin-left: 24px;
     text-decoration: none;
     color: var(--text-dark);
+    font-weight: 500;
 }
 
 nav a:hover {
     color: var(--secondary-blue);
 }
 
-/* Dashboard Header */
+/* ---------- Dashboard Header ---------- */
 .dashboard-header {
     background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
     color: white;
     padding: 40px 8%;
 }
 
-/* Filter Section */
+/* ---------- Filter Section ---------- */
 .filter-section {
     background: white;
     padding: 24px 8%;
@@ -61,39 +63,99 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
-.search-box, select {
-    padding: 8px;
+.search-box,
+select {
+    padding: 8px 12px;
 }
 
-/* Program Cards */
+/* ---------- Programs ---------- */
 .programs-container {
     padding: 0 8%;
 }
 
+/* ---------- Program Card ---------- */
 .program-card {
-    background: white;
+    background: var(--white);
     padding: 24px;
     margin: 24px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    cursor: pointer;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+.program-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+/* Header */
 .program-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
 }
 
+.program-header h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-blue);
+}
+
+/* Status */
 .program-status {
     padding: 6px 14px;
-    border-radius: 20px;
-    color: white;
+    border-radius: 999px;
     font-size: 12px;
+    font-weight: 600;
+    color: white;
 }
 
 .status-active { background: var(--success-green); }
 .status-upcoming { background: var(--warning-orange); }
 .status-completed { background: #9C27B0; }
+
+/* Description */
+.program-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 16px;
+    max-width: 900px;
+}
+
+/* Details Grid */
+.program-details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.detail-item {
+    background: var(--light-gray);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.detail-label {
+    font-size: 11px;
+    color: #777;
+    font-weight: 600;
+}
+
+.detail-value {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Badges */
+.program-badges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
 
 .badge {
     background: #E3F2FD;
@@ -102,33 +164,84 @@ nav a:hover {
     font-size: 12px;
 }
 
-/* Modal */
+/* Actions */
+.program-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.program-actions button {
+    flex: 1;
+}
+
+/* ---------- Modal ---------- */
 .modal {
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.55);
+    z-index: 1000;
 }
 
 .modal-content {
     background: white;
-    margin: 5% auto;
-    padding: 32px;
     width: 90%;
-    max-width: 800px;
-    border-radius: 12px;
+    max-width: 700px;
+    margin: 6% auto;
+    padding: 28px;
+    border-radius: 14px;
+    animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .close-btn {
     float: right;
-    font-size: 28px;
+    font-size: 26px;
     cursor: pointer;
 }
 
-/* Footer */
+.modal h2 {
+    color: var(--primary-blue);
+    margin-bottom: 16px;
+}
+
+.modal ul {
+    list-style: none;
+}
+
+.modal li {
+    padding: 10px;
+    background: var(--light-gray);
+    border-left: 4px solid var(--secondary-blue);
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+/* ---------- Footer ---------- */
 footer {
     background: var(--primary-blue);
     color: white;
     text-align: center;
     padding: 24px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    .program-details {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .program-actions {
+        flex-direction: column;
+    }
 }

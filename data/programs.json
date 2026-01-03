@@ -2,25 +2,51 @@
   {
     "id": 1,
     "name": "Google Summer of Code",
-    "description": "Google's annual open source program.",
+    "description": "Google's annual, international program focused on bringing more student developers into open source software development.",
     "status": "Active",
     "difficulty": "Advanced",
+    "timeline": "May - August",
+    "stipend": "$3000 - $6600",
+    "contributors": 2000,
+    "issues": 450,
+    "organizations": 180,
+    "contributions": [
+      "Bug fixes and feature implementations",
+      "Documentation improvements",
+      "Performance optimization",
+      "UI/UX enhancements"
+    ],
     "issues_list": [
-      "Fix pagination",
-      "Implement dark mode",
-      "Optimize queries"
+      "Fix pagination in search results",
+      "Implement dark mode support",
+      "Add multi-language support",
+      "Optimize database queries",
+      "Create user dashboard"
     ]
   },
   {
     "id": 2,
     "name": "GirlScript Summer of Code",
-    "description": "Beginner friendly open source program.",
+    "description": "A nationwide summer program to inspire girls to explore technology and make their first meaningful open-source contribution.",
     "status": "Active",
     "difficulty": "Beginner",
+    "timeline": "March - May",
+    "stipend": "Certificates & Perks",
+    "contributors": 1500,
+    "issues": 320,
+    "organizations": 120,
+    "contributions": [
+      "Frontend development",
+      "Backend integration",
+      "API documentation",
+      "Testing and QA"
+    ],
     "issues_list": [
-      "Landing page UI",
-      "Responsive fixes",
-      "Add search"
+      "Create landing page UI",
+      "Build contact form with validation",
+      "Add responsive design fixes",
+      "Implement search functionality",
+      "Write unit tests"
     ]
   }
 ]
