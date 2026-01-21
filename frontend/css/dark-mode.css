@@ -1,0 +1,70 @@
+/* =========================================
+   DARK MODE THEME (Plug & Play)
+========================================= */
+
+/* 1. Global Backgrounds & Text */
+body.dark-mode {
+    background-color: #121212 !important; /* Main Background */
+    color: #e0e0e0 !important;            /* Main Text */
+}
+
+/* 2. Navbar & Header */
+body.dark-mode .navbar, 
+body.dark-mode header,
+body.dark-mode nav {
+    background-color: #1a1a1a !important;
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode .nav-link,
+body.dark-mode .navbar a, 
+body.dark-mode .nav-links a {
+    color: #ffffff !important;
+}
+
+/* 3. Cards, Containers & Boxes */
+body.dark-mode .card,
+body.dark-mode .program-card,
+body.dark-mode .feature-box,
+body.dark-mode .container-box,
+body.dark-mode .faq-item,       /* Added for FAQ page */
+body.dark-mode .guide-card,     /* Added for Guides page */
+body.dark-mode .contributor-card { /* Added for Contributors */
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    border: 1px solid #444;
+}
+
+/* 4. Text Headings & Icons inside Dark Elements */
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode h4,
+body.dark-mode .card h4, 
+body.dark-mode .card i,
+body.dark-mode strong {
+    color: #ffffff !important;
+}
+
+/* 5. Inputs & Forms */
+body.dark-mode input, 
+body.dark-mode textarea, 
+body.dark-mode select {
+    background-color: #333 !important;
+    color: #fff !important;
+    border: 1px solid #555 !important;
+}
+
+/* 6. Footer (Universal Fix) */
+body.dark-mode footer, 
+body.dark-mode #footer {
+    background-color: #1a1a1a !important;
+    color: #ccc !important;
+    border-top: 1px solid #333;
+}
+
+body.dark-mode footer a,
+body.dark-mode #footer a {
+    color: #d4af37 !important; /* Gold Links */
+}
