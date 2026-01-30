@@ -810,6 +810,23 @@ body.dark-mode footer.site-footer {
   }
 }
 
+/* =========================
+   SCROLL PROGRESS INDICATOR
+#scrollProgress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(
+    90deg,
+    var(--primary-gold),
+    var(--secondary-gold)
+  );
+  z-index: 2000; /* Above navbar */
+  transition: width 0.15s ease-out;
+}
+
 /* Shimmer Effect */
 .badge::after {
   content: "";
@@ -833,7 +850,6 @@ body.dark-mode footer.site-footer {
 
 /* =========================
    DARK MODE STYLING
-========================= */
 
 /* Default Dark Mode Look */
 body.dark-mode .badge,
@@ -863,7 +879,6 @@ body.dark-mode .badge:active,
 
 /* =========================
    ALTERNATIVE GLASS STYLE (Optional)
-========================= */
 
 .badge.glass-style {
   background: linear-gradient(
@@ -902,7 +917,6 @@ body.dark-mode .badge:active,
 
 /* =========================
    NEON GLOW STYLE (Optional)
-========================= */
 
 .badge.neon-style {
   background: transparent;
@@ -937,7 +951,6 @@ body.dark-mode .badge:active,
 
 /* =========================
    RESPONSIVE DESIGN
-========================= */
 
 @media (max-width: 768px) {
   .badge {
