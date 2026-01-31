@@ -780,7 +780,7 @@ body.dark-mode footer.site-footer {
     var(--primary-gold),
     var(--secondary-gold)
   );
-  z-index: 2000; /* Above navbar */
+  z-index: 2000; /* Above navbar 
   transition: width 0.15s ease-out;
 }
 
@@ -894,7 +894,7 @@ body.dark-mode #cursor-highlight {
     var(--primary-gold),
     var(--secondary-gold)
   );
-  z-index: 2000; /* Above navbar */
+  z-index: 2000; /* Above navbar 
   transition: width 0.15s ease-out;
 }
 
