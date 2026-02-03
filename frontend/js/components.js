@@ -36,6 +36,7 @@ OpenSource Compass
             <a href="${getPath('frontend/pages/contributors.html')}">Contributors</a>
             <a href="${getPath('frontend/pages/faq.html')}">FAQ</a>
             <a href="${getPath('frontend/pages/Contribute.html')}">Contribute</a>
+            <a href="${getPath('frontend/pages/feedback.html')}">Feedback</a>
            <button
   id="themeToggle"
   aria-label="Toggle dark mode"
